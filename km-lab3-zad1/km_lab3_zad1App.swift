@@ -10,8 +10,9 @@ import SwiftUI
 @main
 struct km_lab3_zad1App: App {
     var body: some Scene {
+        @StateObject var vm = ApplicationViewModel()
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: vm)
         }
     }
 }

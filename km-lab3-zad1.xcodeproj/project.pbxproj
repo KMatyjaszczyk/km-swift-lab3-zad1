@@ -11,6 +11,8 @@
 		3FBA52B32C01BB99004F07AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBA52B22C01BB99004F07AC /* ContentView.swift */; };
 		3FBA52B52C01BB9A004F07AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBA52B42C01BB9A004F07AC /* Assets.xcassets */; };
 		3FBA52B82C01BB9A004F07AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBA52B72C01BB9A004F07AC /* Preview Assets.xcassets */; };
+		3FBA52BF2C01BDE9004F07AC /* ApplicationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBA52BE2C01BDE9004F07AC /* ApplicationViewModel.swift */; };
+		3FBA52C12C01C25F004F07AC /* ChooseImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBA52C02C01C25F004F07AC /* ChooseImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		3FBA52B22C01BB99004F07AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3FBA52B42C01BB9A004F07AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FBA52B72C01BB9A004F07AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3FBA52BE2C01BDE9004F07AC /* ApplicationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationViewModel.swift; sourceTree = "<group>"; };
+		3FBA52C02C01C25F004F07AC /* ChooseImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				3FBA52B22C01BB99004F07AC /* ContentView.swift */,
 				3FBA52B42C01BB9A004F07AC /* Assets.xcassets */,
 				3FBA52B62C01BB9A004F07AC /* Preview Content */,
+				3FBA52BE2C01BDE9004F07AC /* ApplicationViewModel.swift */,
+				3FBA52C02C01C25F004F07AC /* ChooseImageView.swift */,
 			);
 			path = "km-lab3-zad1";
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FBA52B32C01BB99004F07AC /* ContentView.swift in Sources */,
+				3FBA52BF2C01BDE9004F07AC /* ApplicationViewModel.swift in Sources */,
 				3FBA52B12C01BB99004F07AC /* km_lab3_zad1App.swift in Sources */,
+				3FBA52C12C01C25F004F07AC /* ChooseImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
