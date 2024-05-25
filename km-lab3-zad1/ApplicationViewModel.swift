@@ -15,10 +15,18 @@ enum ImageCategory: String, CaseIterable, Identifiable {
     var id: String { self.rawValue }
 }
 
+struct Images {
+    var flower: String = ""
+    var animal: String = ""
+    var car: String = ""
+}
+
 class ApplicationViewModel: ObservableObject {
     var flowers: [String] = []
     var animals: [String] = []
     var cars: [String] = []
+    
+    @Published var images: Images = Images()
     
     init() {
         for f in 1 ... 11 {

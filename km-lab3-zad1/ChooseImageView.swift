@@ -41,6 +41,11 @@ struct ChooseImageView: View {
                     let randomIndex = Int.random(in: 0..<numberOfImages)
                     let randomElement = array[randomIndex]
                     randomedImage = randomElement
+                    switch selectedCategory {
+                    case .FLOWER: viewModel.images.flower = randomedImage
+                    case .ANIMAL: viewModel.images.animal = randomedImage
+                    case .CAR: viewModel.images.car = randomedImage
+                    }
                 }
             }) {
                 Text("Random image")

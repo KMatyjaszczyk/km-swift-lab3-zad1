@@ -10,14 +10,31 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var viewModel: ApplicationViewModel
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!!")
-            ChooseImageView(viewModel: viewModel)
+        NavigationView {
+            VStack {
+                if (viewModel.images.flower != "") {
+                    Image(viewModel.images.flower)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .padding()
+                }
+                if (viewModel.images.animal != "") {
+                    Image(viewModel.images.animal)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .padding()
+                }
+                if (viewModel.images.car != "") {
+                    Image(viewModel.images.car)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .padding()
+                }
+                NavigationLink(destination: ChooseImageView(viewModel: viewModel)) {
+                    Text("Choose image")
+                }
+            }
         }
-        .padding()
     }
 }
 
