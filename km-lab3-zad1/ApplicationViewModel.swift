@@ -22,13 +22,13 @@ class ApplicationViewModel: ObservableObject {
     
     init() {
         for f in 1 ... 11 {
-            flowers.append("f\(f).jpeg")
+            flowers.append("f\(f)")
         }
         for a in 1 ... 11 {
-            animals.append("a\(a).jpeg")
+            animals.append("a\(a)")
         }
         for c in 1 ... 11 {
-            cars.append("c\(c).jpeg")
+            cars.append("c\(c)")
         }
     }
     
